@@ -4,4 +4,6 @@ services:
     build: .
     volumes:
       - ./src:/app/src
+      - ./data:/app/data
+      - ./results:/app/results
     command: python src/main.py
